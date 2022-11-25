@@ -290,7 +290,19 @@ footer .details {
 
 @media (max-width: 1024px) {
     ul.navBar {
-        
+        width: 15rem;
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        right: 4rem;
+        top: 4rem;
+    }
+
+    a.login {
+        color:#023020;
+        background: #fff;
     }
 
     #open-menu-button {
