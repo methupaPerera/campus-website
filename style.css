@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html {
+    background: #fff;
+    font-family: 'Poppins', sans-serif;
+    animation: open-animation 1s;
+    scroll-behavior: smooth;
+}
+
+.window-scroll {
+    transition: 0.4s;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+@keyframes open-animation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/*----------------- NavBar -----------------*/
+
+nav {
+    background: #023020;
+    width: 100%;
+    position: fixed;
+}
+
+nav div {
+    height: 12vh;
+    margin: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav div h1 {
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+ul.navBar {
+    list-style: none;
+    display: flex;
+    font-size: 1.05rem;
+    background: #50C878;
+    padding: 1rem 0;
+    border-radius: 1rem;
+}
+
+ul.navBar li a {
+    text-decoration: none;
+    color: #023020;
+    opacity: 0.8;
+    transition: 0.4s;
+    padding: 1rem;
+}
+
+ul.navBar li a:hover {
+    opacity: 1;
+    background: #fff;
+    border-radius: 1rem;
+}
+
+a.login {
+    text-decoration: none;
+    transition: 0.4s;
+    padding: 1rem;
+    font-size: 1.05rem;
+    color: #fff;
+    border-radius: 1rem;
+    background: #50C878;
+}
+
+a.login:hover {
+    background: #fff;
+    color: #50C878;
+}
+
+#open-menu-button, #close-menu-button {
+    display: none;
+    color: #fff;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 2rem;
+    background: transparent;
+}
+
+/*----------------- Main Showcase -----------------*/
+
+.showcase {
+    padding-top: 12vh;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url(images/bg.jpg);
+}
+
+.showcase img {
+    width: 50%;
+    margin-right: 0.4rem;
+}
+
+.main-showcase-content {
+    margin-left: 3rem;
+    color: #023020;
+}
+
+.main-showcase-content h1 {
+    font-size: 2.2rem;
+}
+
+.main-showcase-content p {
+    font-size: 1.3rem;
+}
+
+.main-showcase-content button {
+    margin: 1rem 0;
+    padding: 1.2rem 1.6rem;
+    border: 2px solid #023020;
+    background: transparent;
+    color: #023020;
+    font-size: 1.18rem;
+    font-weight: 500;
+    transition: 0.4s;
+}
+
+.main-showcase-content button:hover {
+    background: #023020;
+    color: rgb(255, 255, 255);
+}
+
+/*----------------- Courses and Diplomas Section -----------------*/
+
+.courses_diplomas {
+    padding: 12vh 0 ;
+}
+
+.courses_diplomas > div {
+    margin: 1rem 0 1rem;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 1rem;
+}
+
+.courses_diplomas img {
+    width: 40%;
+    border-radius: 1rem;
+}
+
+.courses_diplomas h2 {
+    font-size: 2.6rem;
+    color: #023020;
+}
+
+.courses_diplomas p {
+    margin: 1.6rem 1rem 1rem;
+    font-size: 1.5rem;
+    color: #023020;
+}
+
+.courses_diplomas button {
+    display: block;
+    margin: 1rem;
+    padding: 1rem 1.2rem;
+    border-radius: 1rem;
+    border: 2px solid #023020;
+    background: transparent;
+    color: #023020;
+    font-size: 1.18rem;
+    font-weight: 500;
+    transition: 0.4s;
+}
+
+.courses_diplomas button:hover {
+    background: #023020;;
+    color: #50C878;
+}
+
+/*----------------- About Section -----------------*/
+
+.about {
+    padding: 15vh 3rem;
+    background: #023020;
+}
+
+.about h2 {
+    font-size: 2.6rem;
+    color: #50C878;
+}
+
+.main-about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.main-about img {
+    margin-top: 1rem;
+    width: 36%;
+}
+
+.main-about div h4 {
+    padding: 0 2rem;
+    font-size: 2rem;
+    color: #50C878;
+}
+
+.main-about div:nth-child(3) h4 {
+    border-left: 2px solid #50C878;
+}
+
+.main-about div p {
+    padding: 0 1rem;
+    margin-top: 1rem;
+    font-size: 1.35rem;
+    color: #50C878;
+}
+
+.main-about div:nth-child(3) p {
+    border-left: 2px solid #50C878;
+}
+
+p.about-para {
+    font-size: 1.2rem;
+    color: #50C878;
+    margin: 1rem 0;
+}
+
+.first-para {
+    padding-top: 1rem;
+    border-top: 2px solid #50C878;
+}
+
+/*----------------- Footer Section -----------------*/
+
+footer {
+    padding: 2rem;
+    background: #50C878;
+}
+
+footer > p {
+    text-align: center;
+    padding: 1rem 0 0;
+}
+
+footer .details {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.details div {
+    width: calc(100%/3);
+}
+
+.details div h5 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.details ul {
+    list-style: none;
+}
+
+.details a, .details div p {
+    color: #023020;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.details a:hover {
+    text-decoration: underline;
+}
+
+.details div dd {
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+/*----------------- Media Queries (Tablets) -----------------*/
+
+@media (max-width: 1024px) {
+    ul.navBar {
+        background: transparent;
+        position: fixed;
+        top: 4rem;
+        right: 3%;
+        flex-direction: column;
+        gap: 0;
+        display: none;
+    }
+
+    ul.navBar li {
+        padding: 1.5rem;
+        text-align: center;
+        background: #50C878;
+        box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.6);
+        border-bottom: 1px solid #023020;
+        transition: 0.5s;
+        animation: navItem 0.5s ease;
+        transform-origin: top right;
+    }
+
+    @keyframes navItem {
+        0% {
+            border-radius: 6rem;
+            transform: skewX(-60deg) rotate(10deg);
+            opacity: 0;
+        }
+        
+        100% {
+            transform: skewX(0deg) rotate(0deg);
+            border-radius: 1rem; 
+            opacity: 1;
+        }
+    }
+
+    ul.navBar li:hover {
+        background: #40a561;
+    }
+
+    ul.navBar li:nth-child(1) {
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
+
+    ul.navBar li:nth-child(4) {
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        border-bottom: none;
+    }
+
+    ul.navBar li a:hover {
+        background: none;
+    }
+
+    a.login {
+        position: fixed;
+        right: 5rem;
+    }
+
+    #open-menu-button {
+        animation: openMenu 0.3s;
+        display: inline-block;
+    }
+
+    @keyframes openMenu {
+        from {
+            transform: rotate(-30deg);
+        }
+
+        to {
+            transform: rotate(0deg);
+        }
+    }
+
+    #close-menu-button {
+        animation: closeMenu 0.3s;
+    }
+
+    @keyframes closeMenu {
+        from {
+            transform: rotate(30deg);
+        }
+
+        to {
+            transform: rotate(0deg);
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .showcase {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .main-showcase-content {
+        margin: 0 0.8rem;
+    }
+
+    .courses_diplomas > div {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .courses_diplomas img {
+        width: 60%;
+    }
+
+    .courses_diplomas button {
+        margin: 0.8rem auto;
+    }
+
+    .showcase img {
+        display: none;
+    }
+
+    .main-about {
+        display: block;
+        text-align: center;
+    }
+
+    .main-about div:nth-child(3) p, .main-about div:nth-child(3) h4 {
+        border-left: none;
+    }
+
+    footer .details {
+        gap: 2rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
