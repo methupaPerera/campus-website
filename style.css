@@ -37,22 +37,24 @@ nav {
 }
 
 nav div {
-    height: 12vh;
-    margin: 0 1.5rem;
+    margin: 0 8%;
+    height: 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 nav div h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: #fff;
+    font-weight: 800;
 }
 
 ul.navBar {
     list-style: none;
     display: flex;
     font-size: 1.05rem;
+    font-weight: 500;
     background: #50C878;
     padding: 1rem 0;
     border-radius: 1rem;
@@ -61,29 +63,22 @@ ul.navBar {
 ul.navBar li a {
     text-decoration: none;
     color: #023020;
-    opacity: 0.8;
     transition: 0.4s;
     padding: 1rem;
 }
 
 ul.navBar li a:hover {
-    opacity: 1;
     background: #fff;
     border-radius: 1rem;
 }
 
 a.login {
-    text-decoration: none;
-    transition: 0.4s;
-    padding: 1rem;
-    font-size: 1.05rem;
-    color: #fff;
+    color: #50C878;
+    background: #fff;
     border-radius: 1rem;
-    background: #50C878;
 }
 
 a.login:hover {
-    background: #fff;
     color: #50C878;
 }
 
@@ -295,62 +290,7 @@ footer .details {
 
 @media (max-width: 1024px) {
     ul.navBar {
-        background: transparent;
-        position: fixed;
-        top: 4rem;
-        right: 3%;
-        flex-direction: column;
-        gap: 0;
-        display: none;
-    }
-
-    ul.navBar li {
-        padding: 1.5rem;
-        text-align: center;
-        background: #50C878;
-        box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.6);
-        border-bottom: 1px solid #023020;
-        transition: 0.5s;
-        animation: navItem 0.5s ease;
-        transform-origin: top right;
-    }
-
-    @keyframes navItem {
-        0% {
-            border-radius: 6rem;
-            transform: skewX(-60deg) rotate(10deg);
-            opacity: 0;
-        }
         
-        100% {
-            transform: skewX(0deg) rotate(0deg);
-            border-radius: 1rem; 
-            opacity: 1;
-        }
-    }
-
-    ul.navBar li:hover {
-        background: #40a561;
-    }
-
-    ul.navBar li:nth-child(1) {
-        border-top-left-radius: 1rem;
-        border-top-right-radius: 1rem;
-    }
-
-    ul.navBar li:nth-child(4) {
-        border-bottom-left-radius: 1rem;
-        border-bottom-right-radius: 1rem;
-        border-bottom: none;
-    }
-
-    ul.navBar li a:hover {
-        background: none;
-    }
-
-    a.login {
-        position: fixed;
-        right: 5rem;
     }
 
     #open-menu-button {
@@ -382,6 +322,8 @@ footer .details {
         }
     }
 }
+
+/*----------------- Media Queries (Mobile Phones) -----------------*/
 
 @media (max-width: 700px) {
     .showcase {
