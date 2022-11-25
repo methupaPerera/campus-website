@@ -298,6 +298,7 @@ footer .details {
         gap: 2rem;
         right: 4rem;
         top: 4rem;
+        display: none;
     }
 
     a.login {
